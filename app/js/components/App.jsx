@@ -7,6 +7,8 @@
  * graphic logo is a trademark of OpenMRS Inc.
  */
 import React from 'react';
+import Header from './global/Header';
+import {Link} from 'react-router';
 
 export default class App extends React.Component {
   render() {

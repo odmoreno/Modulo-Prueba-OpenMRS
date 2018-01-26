@@ -9,13 +9,25 @@
 import React from 'react'
 import {Route} from 'react-router'
 import App from './components/App'
+import Home from './components/global/Home';
+import serviceList from './components/servicios/serviceList';
+import HomeMedico from './components/ordenes/HomeMedico';
+import ingresoOrdenes from './components/ordenes/ingresoOrdenes';
+import editarOrdenes from './components/ordenes/editarOrdenes';
+
 
 export default (store) => {
   // combine store and onEnter if you need to fire an action when going to a route. Example:
   //   onEnter={ (nextState) => {store.dispatch(loadPatientAction(nextState.params.patientUuid)} }
 
   return (
-    <Route path="/" component={App}>
+    <Route>
+      <Route path="/" component={Home}/>
+      <Route path="/notfound" component={App}/>
+      <Route path="/ordenes/nueva-orden" component={ingresoOrdenes}/>
+	    <Route path="/ordenes" component={HomeMedico}/>
+      <Route path="/ordenes/edit" component={editarOrdenes}/>
+      <Route path="/servicios" component={serviceList}/>
     </Route>
   );
 }
