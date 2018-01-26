@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0",
+  "name": "Modulo-Prueba-OpenMRS",
+  "description": "Modulo de prueba de OpenMRS",
+  "launch_path": "index.html",
+  "icons": {
+    "48": "/img/omrs-button.png"
+  },
+  "developer": {
+    "name": "odmoreno",
+    "url": "https://github.com/odmoreno/Modulo-Prueba-OpenMRS"
+  },
+  "default_locale": "en",
+    "activities": {
+      "openmrs": {
+        "href": "*"
+      }
+    }
+}
